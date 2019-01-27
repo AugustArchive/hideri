@@ -5,14 +5,17 @@ const { dateformat } = require('@maika.xyz/miu');
 module.exports = class HideriLogger {
     /**
      * Create a new Hideri logger instance
-     * @param {IOptions} [options] Contains the initialized options
+     * @param {Options} [options] Contains the initialized options
      */
     constructor(options) {
-        this.options = options || { methods: this.getDefaultMethods() };
-        this.methods = this.options.methods;
+        this.options = Object.assign({
+            methods: this.getDefaultMethods()
+        }, options);
 
-        for (let i = 0; i < this.methods.length; i++)
-            this.constructMethod(this.methods[i], false);
+        Object.freeze(this.options);
+
+        for (let i = 0; i < this.options.methods.length; i++)
+            this.constructMethod(this.options.methods[i], false);
     }
 
     /**
@@ -33,7 +36,7 @@ module.exports = class HideriLogger {
 
         this.assign(method);
         if (append)
-            this.methods.push(method);
+            this.options.methods.push(method);
 
         return this;
     }
@@ -43,10 +46,10 @@ module.exports = class HideriLogger {
      * @returns {HideriLogger} Chainable instance
      */
     deleteMethods() {
-        for (let i = 0; i < this.methods.length; i++)
-            delete this[this.methods[i].name];
+        for (let i = 0; i < this.options.methods.length; i++)
+            delete this[this.options.methods[i].name];
 
-        this.methods = [];
+        this.options.methods = [];
         return this;
     }
 
@@ -299,8 +302,8 @@ module.exports = class HideriLogger {
  */
 
 /**
- * @typedef {Object} IOptions
- * @prop {Method[]} [methods] The methods to assign by default
+ * @typedef {Object} Options
+ * @prop {Method[]} methods The methods to assign by default
  */
 
 /**

@@ -1,9 +1,10 @@
 {
     "name": "@maika.xyz/hideri",
     "description": "Logger interface made for Maika",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "auguwu",
     "main": "src/index.js",
+    "types": "index.d.ts",
     "dependencies": {
         "@maika.xyz/miu": "0.0.3",
         "chalk": "2.4.2"

@@ -12,24 +12,19 @@ This is a modification of [PassTheMayo/mayo-logs](https://github.com/PassTheMayo
 
 ## Example Usage
 ```js
-const { Logger } = require('@maika.xyz/hideri');
-const logger = new Logger();
+// Using Hideri#create
+const Hideri = require('@maika.xyz/hideri');
+const logger = Hideri.create();
 
-logger.info('hi');
-logger.debug('hi');
-logger.error('hi');
-logger.warn('hewwo >w<~');
-logger.verbose('OwO');
+logger.info('Hi!');
 ```
 
-returns
+```js
+// Deconstructing the Logger
+const Hideri = require('@maika.xyz/hideri');
+const logger = new Hideri.Logger();
 
-```
- 5292  20:33:46  info  hi
- 5292  20:33:46  debug  hi
- 5292  20:33:46  error  hi
- 5292  20:33:46  warning  hewwo >w<~
- 5292  20:33:46  verbose  OwO
+logger.info('Hi!');
 ```
 
 ## License
