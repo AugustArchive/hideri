@@ -1,4 +1,4 @@
-declare module '@maika.xyz/hideri' {
+
     export namespace Hideri {
         export const version: string;
         export function create(options?: Hideri.Options): Hideri.Logger;
@@ -32,11 +32,10 @@ declare module '@maika.xyz/hideri' {
             padRight?: number;
         }
         export type Options = {
-            methods?: Method[];
-        }
-        export type IBuildResult = {
-            result: string;
-            fill: string;
-        }
+        methods?: Method[];
+    }
+    export type IBuildResult = {
+        result: string;
+        fill: string;
     }
 }
