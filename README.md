@@ -1,20 +1,11 @@
 # @maika.xyz/hideri
 > :pencil: **A logger for Node.js made for Maika.**
 
-## Warning
-This is a modification of [PassTheMayo/mayo-logs](https://github.com/PassTheMayo/mayo-logs) with the following modifications:
-
-```diff
-+ TypeScript Typings
-- Removed `Logger.Colors` and `Logger.DateFormat`
-* Redid JSDoc
-```
-
 ## Example Usage
 ```js
 // Using Hideri#create
 const Hideri = require('@maika.xyz/hideri');
-const logger = Hideri.create();
+const logger = Hideri.create({ transports: [new Hideri.ConsoleTransport()] });
 
 logger.info('Hi!');
 ```
@@ -22,7 +13,7 @@ logger.info('Hi!');
 ```js
 // Deconstructing the Logger
 const Hideri = require('@maika.xyz/hideri');
-const logger = new Hideri.Logger();
+const logger = new Hideri.Logger({ transports: [new Hideri.ConsoleTransport()] });
 
 logger.info('Hi!');
 ```

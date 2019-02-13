@@ -1,1 +1,5 @@
 node_modules/
+build/
+
+# Testing feature for the File transport
+tests/tmp/
