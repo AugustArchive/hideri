@@ -1,0 +1,14 @@
+{
+    "name": "@maika.xyz/hideri",
+    "description": "Node.JS Logger made for Maika",
+    "version": "0.3.0",
+    "dependencies": {
+        "@maika.xyz/colors": "0.3.0",
+        "@maika.xyz/eris-utils": "0.1.1"
+    },
+    "main": "lib/index.js",
+    "types": "index.d.ts",
+    "repository": {
+        "url": "https://github.com/MaikaBot/hideri"
+    }
+}

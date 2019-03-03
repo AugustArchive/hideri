@@ -1,12 +1,3 @@
-# @maika.xyz/hideri [![Maintained with Lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
-
-> :pencil: **A logger for Node.js made for Maika.**
-
-## License
-
-> [@maika.xyz/hideri](https://github.com/MaikaBot/hideri) is maintained by the Maika developers & released under the [MIT](https://github.com/MaikaBot/hideri/blob/master/LICENSE) license.
-
-```
 Copyright (c) 2019-present auguwu
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -26,4 +17,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
