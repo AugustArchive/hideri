@@ -3,7 +3,7 @@
     "devDependencies": {
         "@types/node": "11.10.4",
         "lerna": "3.13.1",
-        "typescript": "3.3.3333"
+        "typescript": "3.4.2"
     },
     "workspaces": [
         "packages/*"
