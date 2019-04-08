@@ -1,7 +1,7 @@
 {
     "private": true,
     "devDependencies": {
-        "@types/node": "11.10.4",
+        "@types/node": "11.13.1",
         "lerna": "3.13.1",
         "typescript": "3.3.3333"
     },
